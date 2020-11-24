@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/dark_stroke"
+    android:layout_height="130dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/appleneob"
+        android:text="학교 청원 게시판 개발 인원 구합니다 ~"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="21dp"/>
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@drawable/square_button"
+        android:fontFamily="@font/appleneob"
+        android:gravity="center"
+        android:text="D-1"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="19dp"/>
+
+    <TextView
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/appleneol"
+        android:text="성실히 프로젝트에 참여해 줄 학생들을 찾습니다"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_field"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@drawable/field_square"
+        android:fontFamily="@font/appleneob"
+        android:gravity="center"
+        android:text="Figma"
+        android:textSize="10dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginLeft="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_field2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@drawable/field_square2"
+        android:fontFamily="@font/appleneob"
+        android:gravity="center"
+        android:text="XD"
+        android:textSize="10dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/love"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
