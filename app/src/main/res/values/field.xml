@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="field_array">
+        <item>앱</item>
+        <item>서버</item>
+        <item>인공지능</item>
+        <item>하드웨어</item>
+        <item>웹</item>
+        <item>기획</item>
+        <item>기타</item>
+    </string-array>
+</resources>
