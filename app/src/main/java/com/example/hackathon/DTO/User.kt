@@ -1,3 +1,6 @@
 package com.example.hackathon.DTO
 
-data class User(val id: String, val password: String)
+data class User(
+    var name : String,
+    var userInfo : String
+)
