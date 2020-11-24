@@ -5,84 +5,119 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
-    <ImageView
-        android:layout_width="57dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="40dp"
-        android:src="@drawable/logo2"/>
+    tools:context=".User.LoginActivity">
 
-    <ImageView
-        android:layout_width="284dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="40dp"
-        android:src="@drawable/text_android"
-        android:layout_marginTop="50dp"/>
-    <LinearLayout
-        android:layout_marginTop="70dp"
-        android:layout_width="330dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:background="@drawable/square"
-        android:layout_gravity="center_horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:layout_width="10dp"
-            android:layout_height="40dp"
-            android:layout_gravity="bottom"/>
-        <EditText
-            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취 준 진 담"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_login"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="42dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이스터고등학교에 대한 모든 것"
+        android:textSize="22dp"
+        android:fontFamily="@font/appleneol"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='\"취 준 진 담\"'
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/appleneol"
+        android:layout_marginLeft="42dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:background="@drawable/square"
+        app:endIconTint="#6385FF"
+        app:hintTextColor="#6385FF"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editText_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="아이디"
-            android:textSize="13dp"
+            android:layout_margin="10dp"
             android:background="#ffffff"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="center"
-            android:fontFamily="@font/appleneol"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
+            android:fontFamily="@font/appleneol"
+            android:hint="아이디"
+            android:inputType="text"
+            android:textSize="13dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="330dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
         android:background="@drawable/square"
-        android:layout_gravity="center_horizontal">
-        <TextView
-            android:layout_width="10dp"
-            android:layout_height="40dp"
-            android:layout_gravity="bottom"/>
-        <EditText
-            android:inputType="textPassword"
+        app:endIconTint="#6385FF"
+        app:hintTextColor="#6385FF"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editText_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="비밀번호"
-            android:textSize="13dp"
+            android:layout_margin="10dp"
             android:background="#ffffff"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="center"
-            android:fontFamily="@font/appleneol"/>
-    </LinearLayout>
+            android:fontFamily="@font/appleneol"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textSize="13dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button_login"
-        android:layout_marginTop="40dp"
         android:layout_width="330dp"
         android:layout_height="40dp"
-        android:text="로그인"
-        android:fontFamily="@font/appleneol"
-        android:textColor="#ffffff"
-        android:textSize="14dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/square_button"/>
+        android:layout_marginTop="40dp"
+        android:background="@drawable/square_button"
+        android:fontFamily="@font/appleneol"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+
     <TextView
         android:id="@+id/button_signup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="10dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
         android:text="아직 계정이 없으신가요?"
         android:textColor="#989898"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="100dp"/>
+        android:textSize="11dp" />
 </LinearLayout>
