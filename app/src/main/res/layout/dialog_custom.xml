@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="제목"
+        android:textColor="#6385FF"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/appleneob"
+        android:layout_marginTop="60dp"/>
+    <EditText
+        android:id="@+id/dia_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:hint="제목을 입력해주세요."
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="내용"
+        android:textColor="#6385FF"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/appleneob"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/dia_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:hint="내용을 입력해주세요."
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="분야"
+        android:textColor="#6385FF"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/appleneob"
+        android:layout_marginTop="30dp"/>
+    <Spinner
+        android:id="@+id/dia_spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:spinnerMode="dropdown" />
+    <Spinner
+        android:id="@+id/dia_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:text="등록"
+            android:background="@drawable/square_button"
+            android:textSize="16dp"
+            android:fontFamily="@font/appleneol"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:text="취소"
+            android:background="@drawable/button_cancel"
+            android:textSize="16dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/appleneol"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

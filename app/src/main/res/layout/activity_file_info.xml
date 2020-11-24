@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FileInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:background="@drawable/square_file_button">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[앱] 앱 프로젝트 개발 인원 모집"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:fontFamily="@font/appleneob"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="38dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/appleneob"
+            android:text="프로젝트 소개"/>
+        <LinearLayout
+            android:background="#F1F1F1"
+            android:layout_marginTop="10dp"
+            android:layout_width="340dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="앱 프로젝트 인원 구해요"
+                android:fontFamily="@font/appleneol"
+                android:textColor="#000000"
+                android:layout_margin="15dp"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/appleneob"
+                android:text="모집"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:background="@drawable/square">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="안드로이드에 관심 있는 사람 지원 해주세요."
+                    android:fontFamily="@font/appleneob"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="안드로이드/ios 가능하신분"
+                    android:textSize="8dp"
+                    android:fontFamily="@font/appleneol"
+                    android:textColor="#000000"/>
+                <Button
+                    android:id="@+id/join_button"
+                    android:layout_width="41dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/square_button"
+                    android:fontFamily="@font/appleneol"
+                    android:textColor="#ffffff"
+                    android:text="지원"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7ECFF"
+    tools:context=".User.MypageActivity">
+
+    <LinearLayout
+        android:id="@+id/my_linear"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/mypage_square"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="마이페이지"
+            android:textSize="30dp"
+            android:textColor="#6385FF"
+            android:fontFamily="@font/appleneob"
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="34dp"/>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/frofile"
+                android:layout_marginLeft="75dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/my_name"
+                        android:layout_width="70dp"
+                        android:layout_height="31dp"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:text="진예원"
+                        android:gravity=""
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/appleneol"/>
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/my_now"
+                        android:layout_width="70dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/field_square2"
+                        android:text="재학중"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/appleneob"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/my_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="광주소프트웨어마이스터고등학교"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/appleneol"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            layout="@layout/bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/appleneob"
+        android:text="내 참가 내역"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/join_text"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/appleneob"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="15dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

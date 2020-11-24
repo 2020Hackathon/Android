@@ -7,7 +7,7 @@
         android:color="#f5f5f5"/>
 
     <corners
-        android:radius="10dp" />
+        android:radius="40dp" />
 
     <!-- 1dp 크기의 #000000 색 테두리 -->
     <stroke
